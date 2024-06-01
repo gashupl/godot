@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://u4s03yu1jsp8"]
+
+[ext_resource type="Texture2D" uid="uid://b0fqe8rxa21pt" path="res://icon.svg" id="1_q5kuf"]
+[ext_resource type="Script" path="res://monster_scene.cs" id="2_on14v"]
+
+[node name="MonsterSprite" type="Sprite2D"]
+position = Vector2(557, 271)
+texture = ExtResource("1_q5kuf")
+script = ExtResource("2_on14v")
