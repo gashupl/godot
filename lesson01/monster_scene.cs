@@ -6,6 +6,8 @@ public partial class monster_scene : Sprite2D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		var child = this.GetNode<Godot.Sprite2D>("MonsterChildSprite"); 
+		child.Position = new Vector2(100, 100);
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -29,5 +31,15 @@ public partial class monster_scene : Sprite2D
 		{
 			this.Position += new Vector2(SHIFT, 0);
 		}
+	}
+	private static Vector2 CalculatePointOnCircle(float radius, Vector2 center, float angleInDegrees)
+	{
+		// Convert angle in degrees to radians
+		double angleInRadians = angleInDegrees * (Math.PI / 180);
+
+		float x = center.X + (float)(radius * Math.Cos(angleInRadians));
+		float y = center.Y + (float)(radius * Math.Sin(angleInRadians));
+
+		return new Vector2(x, y);
 	}
 }
