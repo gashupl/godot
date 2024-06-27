@@ -7,7 +7,8 @@ public partial class monster_scene : Sprite2D
 	public override void _Ready()
 	{
 		var child = this.GetNode<Godot.Sprite2D>("MonsterChildSprite"); 
-		child.Position = new Vector2(100, 100);
+		//child.Position = new Vector2(100, 100);
+		child.Position = CalculatePointOnCircle(10, this.Position, 0); 
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
