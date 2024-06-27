@@ -33,7 +33,7 @@ public partial class monster_scene : Sprite2D
 			this.Position += new Vector2(SHIFT, 0);
 		}
 	}
-	private static Vector2 CalculatePointOnCircle(float radius, Vector2 center, float angleInDegrees)
+	public static Vector2 CalculatePointOnCircle(float radius, Vector2 center, float angleInDegrees)
 	{
 		// Convert angle in degrees to radians
 		double angleInRadians = angleInDegrees * (Math.PI / 180);
