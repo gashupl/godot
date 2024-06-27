@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://monster_scene.cs" id="2_on14v"]
 
 [node name="MonsterParentSprite" type="Sprite2D"]
-position = Vector2(557, 271)
+position = Vector2(100, 100)
 texture = ExtResource("1_q5kuf")
 script = ExtResource("2_on14v")
 
