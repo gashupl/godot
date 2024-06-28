@@ -10,3 +10,14 @@ script = ExtResource("2_on14v")
 
 [node name="MonsterChildSprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_q5kuf")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = -0.133
+anchor_top = -0.125
+anchor_right = -0.133
+anchor_bottom = -0.125
+offset_left = -72.976
+offset_top = -74.0
+offset_right = 1140.02
+offset_bottom = -48.0
