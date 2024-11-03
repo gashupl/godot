@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b644lxfyj7358"]
+
+[ext_resource type="Texture2D" uid="uid://becuxxbuxfj5h" path="res://cavia01.png" id="1_aqi3j"]
+
+[node name="ChildNode" type="Node2D"]
+
+[node name="CaviaSprite" type="Sprite2D" parent="."]
+position = Vector2(466, 235)
+texture = ExtResource("1_aqi3j")
